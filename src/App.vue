@@ -1,27 +1,24 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <MainCard />
-</template>
-
-<script>
-import MainCard from './components/MainCard.vue';
-
-export default {
-  name: 'App',
-  components: {
-    MainCard
-  }
-}
+<script setup>
+import NavBarComponent from './components/NavBarComponent.vue';
+import ContentComponent from './components/ContentComponent.vue'
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<template>
+  <header>
+    <NavBarComponent />
+    <div class="main">
+      <ContentComponent />
+    </div>
+  </header>
+
+  <main>
+  </main>
+</template>
+
+<style scoped>
+.logo {
+  display: block;
+  margin: 0 auto 2rem;
 }
+
 </style>

@@ -1,0 +1,17 @@
+@import './base.css';
+
+/* Style page content */
+.main {
+  /* Same as the width of the sidebar */
+  /* Centers Website */
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  margin-top: 30%;
+}
+
+.main p {
+  text-align: left;
+  display: inline-block;
+}
+
